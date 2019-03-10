@@ -1,0 +1,17 @@
+/** tSpinner (v1.0.0) - Copyright 2019 Joseph Cabral - Licensed under MIT
+   Docs: https://github.com/Joe1363/tSpinner
+**/
+@-webkit-keyframes spin {
+  from { -webkit-transform:rotate(0deg); }
+  to { -webkit-transform:rotate(360deg); }
+}
+@keyframes spin {
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
+}
+
+#tSpinner { width: 100%;  height: 100%;  top: 0;  right: 0;  bottom: 0;  left: 0;  position: fixed;  z-index: 999;  background: rgba(0, 0, 0, 0.4);  text-align: center; }
+#tSpinner #tsDiv { margin-top: 40vh;  color: #ffffff;  background: rgba(0, 0, 0, 0.8);  text-align: center;  padding: 25px;  display: inline-block; }
+#tSpinner #tsLoad { width: 50px;  height: 50px;  border: 8px solid #ffffff;  border-top-color: transparent;  border-radius: 50%;  display: inline-block;  -webkit-animation: spin .8s linear infinite;  animation: spin .8s linear infinite; }
+#tSpinner #tsText { padding-top: 5px; }
+.tspScroll { overflow: hidden; }
