@@ -1,4 +1,4 @@
-# tSPinner
+# tSpinner
 Simple Javascript and CSS loading animation
 
 ## Setup
